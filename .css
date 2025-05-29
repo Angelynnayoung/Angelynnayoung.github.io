@@ -1,0 +1,222 @@
+element.style {
+    width: 100%;
+    max-width: 800px;
+}
+.msg-body img.preview {
+    cursor: zoom-in;
+}
+.bold-focus #ybar input:focus, .bold-focus #ybar input[role=combobox], .bold-focus.pointer-mode * {
+    outline: none !important;
+}
+.msg-body img {
+    text-indent: -9999px;
+}
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+#Atom .mq_AS {
+    word-break: break-word;
+}
+.msg-body, .rte {
+    word-wrap: break-word;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    line-height: normal;
+}
+user agent stylesheet
+li {
+    text-align: -webkit-match-parent;
+}
+#Atom .hd_n {
+    list-style-type: none;
+}
+user agent stylesheet
+ul {
+    list-style-type: disc;
+}
+#Atom .cZ1RN91d_GG {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+#Atom .cZ1RN91d_n {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body {
+    --text-primary: #1d1d1d;
+    --text-primary-inverted: #fdfdfd;
+    --text-secondary: #626262;
+    --text-tertiary: #767676;
+    --text-tertiary-inverted: #d0d0d0;
+    --text-disabled: #b0b0b0;
+    --text-contrast: #fff;
+    --text-hover: #6a30ca;
+    --primary-main: #7d2eff;
+    --primary-hover: #6a30ca;
+    --primary-click: #4b1c99;
+    --skeleton2: #d3d3d3;
+    --progress1: #853cfd;
+    --error-main: #eb0f29;
+    --error-hover: #da071f;
+    --error-click: #cd041c;
+    --success-main: #008751;
+    --success-hover: #007144;
+    --success-click: #025e39;
+    --background-main: #fff;
+    --background-main-inverted: #323232;
+    --background-secondary: #f6f6f6;
+    --background-tertiary: rgba(0, 0, 0, .06);
+    --background-tertiary-alt: #ededed;
+    --background-darken: rgba(51, 51, 51, .65);
+    --background-skeleton: linear-gradient(270deg, hsla(0, 0%, 87%, .32) -0.04%, hsla(0, 0%, 58%, .8) 99.96%);
+    --border-main: #eee;
+    --border-main-alt: rgba(0, 0, 0, .07);
+    --border-image: rgba(0, 0, 0, .03);
+    --border-light: hsla(0, 0%, 100%, .15);
+    --border-dark: rgba(0, 0, 0, .15);
+    --gallery-text-primary: #f6f6f6;
+    --gallery-text-secondary: #b0b0b0;
+    --gallery-toolbar-background: rgba(14, 14, 17, .75);
+    --gallery-background: rgba(14, 14, 17, .95);
+    --gallery-divider: #484849;
+    --gallery-icons: #b0b0b0;
+    --gallery-thumbnail-darken: #1a1a1c;
+    --gallery-icon-button-bg: #363637;
+    --gallery-icon-button-bg-hover: #505050;
+    --gallery-icon-button2-bg: #626262;
+    --gallery-icon-button2-bg-hover: #6c6c6c;
+    --gallery-thumbnail-hover: hsla(0, 0%, 100%, .08);
+    --gallery-thumbnail-dark-hover-2: rgba(26, 26, 28, .92);
+    --gallery-download-button: #f6f6f6;
+    --gallery-download-button-hover: #fff;
+    --gallery-download-button-click: #f1f1f1;
+    --gallery-download-button-text: #5b636a;
+    --gallery-download-button-text-click: #0e0e11;
+    --other-tooltip: rgba(29, 29, 29, .8);
+Show all properties (169 more)
+}
+body {
+    background-color: #fff;
+    color: #1d2228;
+    font: normal 13px / 18px var(--yahoo-web-font-stack, "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Lucida Grande", sans-serif);
+    margin: 0;
+    overflow: hidden;
+}
+body, html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -ms-overflow-style: scroll;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+}
+:root {
+    --gradient-color1: #ffffff;
+    --gradient-color2: #004D7C;
+    --gradient-color3: undefined;
+    --highlight: #ffffff;
+    --bold-outline-color: #ffa700;
+    --bold-outline-color-dark: #ffa700;
+    --thin-outline-color: #1d2228;
+    --thin-outline-color-dark: #c7cdd2;
+    --compose-btn-color: #0047FF;
+    --segment-border-color: rgba(0, 71, 255, 0.64);
+    --segment-bgcolor: rgba(0, 71, 255, 0.32);
+    --segment-hover-color: [object Object];
+    --folder-actived-bg-color: rgba(0, 71, 255, 0.32);
+    --folder-hovered-bg-color: rgba(0, 71, 255, 0.16);
+    --folder-actived-border: 2px solid #0047FF;
+    --item-selected-bgcolor: rgba(0, 71, 255, 0.32);
+    --item-hovered-bgcolor: rgba(0, 71, 255, 0.16);
+    --list-item-sep-color: #e0e4e9;
+    --previewr-toolbar: #2d2d2d;
+    --clip-btn-color: #0047FF;
+    --bg-background-color: rgba(0, 0, 0, 0.6);
+    --bg-color: rgba(0, 77, 124, 0.8);
+    --bg-size: undefined;
+    --max-bg-size: undefined;
+    --card-highlight-color: #373A43;
+    --bg-repeat: undefined;
+    --bg-repeat-img: none;
+    --bg-repeat-img-size: undefined;
+    --bg-repeat-img-position: undefined;
+    --bg-img: linear-gradient(rgba(0, 77, 124, 0.8), rgba(0, 77, 124, 0.8));
+    --primary-blue: #0f69ff;
+    --hover-blue: #0C54CC;
+    --sub-button: #f1f1f5;
+    --ybar-background-color: #FFFFFF;
+    --search-input-button-background-color: #0047FF;
+    --search-input-border: 1px solid #0047FF;
+    --search-input-button-hover-color: #0040E5;
+    --ybar-background-image: undefined;
+    --send-btn-color: undefined;
+}
+:root, html[data-color-scheme=dark] [data-maintain-color], html[data-color-theme-enabled] [data-color-scheme=light], html[data-color-theme-enabled][data-color-scheme=light] {
+    --yb-default-font-family: "Helvetica Neue", Helvetica, Tahoma, Geneva, Arial, sans-serif;
+    --yb-fuji2-font-family: "YahooSans VF", YahooSans, "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --yb-uh3-cond-font-family: "Yahoo Sans Cond", YahooSansCond, "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --yb-font-regular: 400;
+    --yb-font-medium: 500;
+    --yb-font-bold: 600;
+    --yb-color-att-dark-blue: #0057b8;
+    --yb-color-frontier-red: #c41230;
+    --yb-color-rogers-red: #c41522;
+    --yb-color-a11y-gray: #787679;
+    --yb-barbie: #f80e5d;
+    --yb-barney: #cc008c;
+    --yb-batcave: #232a31;
+    --yb-battleship: #5b636a;
+    --yb-black: #000;
+    --yb-blurple: #5d5eff;
+    --yb-bob: #b0b9c1;
+    --yb-bonsai: #008751;
+    --yb-charcoal: #464e56;
+    --yb-cobalt: #003abc;
+    --yb-denim: #1a0dab;
+    --yb-dirty-seagull: #e0e4e9;
+    --yb-dolphin: #6e7780;
+    --yb-dory: #0f69ff;
+    --yb-gandalf: #979ea8;
+    --yb-grape-jelly: #6001d2;
+    --yb-gray-hair: #f0f3f5;
+    --yb-hulk-pants: #7e1fff;
+    --yb-inkwell: #1d2228;
+    --yb-malbec: #39007d;
+    --yb-marshmallow: #f5f8fa;
+    --yb-midnight: #101518;
+    --yb-mulberry: #5015b0;
+    --yb-pebble: #c7cdd2;
+    --yb-peeps: #7dcbff;
+    --yb-ramones: #2c363f;
+    --yb-sea-foam: #11d3cd;
+    --yb-scooter: #0063eb;
+    --yb-shark: #828a93;
+    --yb-sky: #12a9ff;
+    --yb-smurfette: #188fff;
+    --yb-solo-cup: #eb0f29;
+    --yb-starfish: #7759ff;
+    --yb-swedish-fish: #ff333a;
+    --yb-thanos: #907cff;
+    --yb-turmeric: #ffa700;
+    --yb-white: #fff;
+    --yb-rgb-battleship: 91 99 106;
+    --yb-rgb-white: 255 255 255;
+    --yb-rgb-blurple: 93 94 255;
+Show all properties (150 more)
+}
+:root {
+    --yahoo-web-font-stack: "OpenSans VF", "OpenSans", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    --msg-list-weight: 700;
+    letter-spacing: -0.02em;
+}
+:root {
+    --msg-list-weight: bold;
+}
+:root {
+    --yahoo-nov-web-font-stack: "Yahoo CR4 VAR BETA VF";
+    --msg-list-weight: 600;
+}
