@@ -73,7 +73,41 @@ section {
   background-color: #f9f9f9; /* Optional: light background */
   box-shadow: 0 2px 8px rgba(0,0,0,0.06); /* Optional: subtle shadow */
 }
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 1em;
+    height: auto; /* Remove fixed height for scrolling */
+    flex-direction: column;
+  }
 
+  .logo {
+    width: 90vw;
+    max-width: 300px;
+    margin: 0 auto 1em auto;
+  }
+
+  .menu {
+    padding: 1em;
+    margin: 1em 0;
+    max-width: 100%;
+  }
+
+  section {
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price {
+    align-self: flex-start;
+    padding-left: 0;
+    margin-top: .2em;
+  }
+}
 .bottom-line {
   border: none;
   border-top: 3px solid #7d2eff;
