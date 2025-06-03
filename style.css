@@ -2,6 +2,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #fefefe;
   color: #222;
+  flex-direction: column;
 }
 
 .menu {
