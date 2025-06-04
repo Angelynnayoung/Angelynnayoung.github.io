@@ -2,7 +2,12 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #fefefe;
   color: #222;
+  /* Center all content vertically/horizontally */
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .menu {
@@ -40,6 +45,7 @@ body {
   margin-bottom: 0.7em;
   padding-bottom: 0.7em;
   text-align: center;
+  align-item: center;
 }
 
 .item:last-child {
@@ -81,7 +87,7 @@ section {
 .logo {
   display: block;
   margin-left: auto;
-  margin-right: auto:
+  margin-right: auto;
 }
 @media screen and (max-width: 768px) {
   body {
