@@ -51,6 +51,7 @@ body {
   font-size: 1.1em;
   color: #4b1c99;
   margin: 0;
+  text-align: center;
 }
 
 .price {
@@ -60,6 +61,7 @@ body {
   padding-left: 1em;
   font-size: 1.1em;
   margin: 0 0 0.2em 0;
+  text-align: center;
 }
 
 .item p {
