@@ -21,6 +21,7 @@ body {
 .menu h1, .menu h2, .menu h3 {
   color: #7d2eff;
   margin-bottom: 0.2em;
+  text-align: center;
 }
 
 .menu img {
@@ -37,6 +38,7 @@ body {
   border-bottom: 1px solid #eee;
   margin-bottom: 0.7em;
   padding-bottom: 0.7em;
+  text-align: center;
 }
 
 .item:last-child {
@@ -86,6 +88,7 @@ section {
     width: 90vw;
     max-width: 300px;
     margin: 0 auto 1em auto;
+    verticle-align: middle;
   }
 
   .menu {
