@@ -21,7 +21,7 @@ body {
 .menu h1, .menu h2, .menu h3 {
   color: #7d2eff;
   margin-bottom: 0.2em;
-  text-align: center;
+  align-items: center;
 }
 
 .menu img {
@@ -53,7 +53,7 @@ body {
   font-size: 1.1em;
   color: #4b1c99;
   margin: 0;
-  text-align: center;
+  align-items: center;
 }
 
 .price {
@@ -89,6 +89,7 @@ section {
     max-width: 300px;
     margin: 0 auto 1em auto;
     verticle-align: middle;
+    justify-items: center;
   }
 
   .menu {
