@@ -19,7 +19,11 @@ body {
   margin: 2rem auto;
   text-align: center;
 }
-
+.description {
+  text-align: center;
+  margin: 1.5em auto;
+  max-width: 600px;
+}
 .menu section {
   margin-bottom: 2em;
 }
@@ -45,7 +49,7 @@ body {
   margin-bottom: 0.7em;
   padding-bottom: 0.7em;
   text-align: center;
-  align-item: center;
+  align-items: center;
 }
 
 .item:last-child {
@@ -59,8 +63,10 @@ body {
   font-weight: 600;
   font-size: 1.1em;
   color: #4b1c99;
-  margin: 0;
+  margin: 0 auto 0.4em auto;
   align-items: center;
+  display: block;
+  text-align: center;
 }
 
 .price {
