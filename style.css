@@ -27,7 +27,20 @@ body {
 .menu section {
   margin-bottom: 2em;
 }
-
+.drinks-menu-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.lemonade-img {
+  width: 60px;
+  height: auto;
+}
+.drinks-menu-content {
+  margin: 0 20px;
+  text-align: center;
+}
 .menu h1, .menu h2, .menu h3 {
   color: #7d2eff;
   margin-bottom: 0.2em;
