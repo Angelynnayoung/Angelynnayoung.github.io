@@ -116,6 +116,11 @@ section {
 .logo-container img {
   display: inline-block;
 }
+.french-fries.webp {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This also centers vertically if the container has a height */
+}
 @media screen and (max-width: 768px) {
   body {
     padding: 0 1em;
