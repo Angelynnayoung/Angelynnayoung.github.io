@@ -9,7 +9,35 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
 
+.side-column {
+  width: 80px; /* Adjust width as needed */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+}
+
+.left-column {
+  /* Optional: Style for left column */
+}
+
+.right-column {
+  /* Optional: Style for right column */
+}
+
+.menu {
+  flex: 1 0 400px; /* Your existing menu styles, adjust as needed */
+  max-width: 650px;
+}
 .menu {
   max-width: 650px;
   background: #fff;
