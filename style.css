@@ -37,21 +37,21 @@ body {
   right: 0;
 }
 
-/* Add margin-left and margin-right to your main content to avoid overlap */
-<!-- .menu-wrapper {
+/* Add margin-left and margin-right to your main content to avoid overlap 
+ .menu-wrapper {
   margin-left: 80px;    /* Same as .side-column width */
-  margin-right: 80px;
+  /*margin-right: 80px;
   position: relative;
   z-index: 2;           /* Above columns if needed */
 }
-.side-column {
+/*.side-column {
   width: 80px; /* Adjust width as needed */
-  position: relative;
+  /*position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: transparent;
-}
+}*/
 
 .left-column {
   /* Optional: Style for left column */
@@ -59,7 +59,7 @@ body {
 
 .right-column {
   /* Optional: Style for right column */
-} -->
+} */
 
 .menu {
   flex: 1 0 400px; /* Your existing menu styles, adjust as needed */
