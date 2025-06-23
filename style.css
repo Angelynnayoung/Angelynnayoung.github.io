@@ -107,9 +107,15 @@ body {
   border-radius: 8px; /* Optional: for rounded corners */
   box-shadow: 0 2px 8px rgba(125,46,255,0.07); /* Optional: shadow */
 }
+.menu {
+  text-align: center;
+}
 .menu img {
   display: block;
-  margin: 0.8em 0 1em 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
   max-width: 130px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(125,46,255,0.07);
@@ -167,7 +173,7 @@ section {
   background-color: #f9f9f9; /* Optional: light background */
   box-shadow: 0 2px 8px rgba(0,0,0,0.06); /* Optional: subtle shadow */
 }
-.logo-container {
+.logo-container, .side-container {
   display: flex;
   justify-content: center;
   align-items: center; /* This also centers vertically if the container has a height */
