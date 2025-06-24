@@ -151,17 +151,11 @@ function addRandomImagesToColumn(columnSelector, imageCount = 5) {
   const columnHeight = column.offsetHeight || 600; // fallback height
 
   for (let i = 0; i < imageCount; i++) {
-    const img = document.createElement('img');
+       const img = document.createElement('img');
     img.src = foodImages[Math.floor(Math.random() * foodImages.length)];
-    img.style.width = '50px';
-    img.style.borderRadius = '8px';
-    img.style.margin = '10px 0';
-    img.style.position = 'absolute';
-    img.style.left = '50%';
-    img.style.transform = 'translateX(-50%)';
-    // Random vertical placement within the column
-    img.style.top = Math.random() * (columnHeight - 60) + 'px';
+    img.style.top = Math.random() * (columnHeight - 60) + 'px'; // random vertical position
     column.appendChild(img);
+  }
   }
 
 
