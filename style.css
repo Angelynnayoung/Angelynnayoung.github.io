@@ -9,12 +9,20 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.layout-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 .menu-wrapper {
   display: fixed;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
   width: 100%;
+  flex: 1 1 700px;
+  max-width: 700px;
+  min-width: 320px;
 }
 .side-column {
   position: relative;
@@ -27,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
- overflow-y: hidden; 
+ overflow: hidden; 
 }
 
 .left-column {
