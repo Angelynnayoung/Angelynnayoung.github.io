@@ -38,11 +38,12 @@ body {
 }
 .side-column img {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px;
+  width: 40px;      /* or any value that looks good */
+  height: auto;     /* keeps the aspect ratio */
+  max-width: 100%;  /* prevents overflow */
   border-radius: 8px;
   margin: 10px 0;
+}
   /* transition for a floating effect (optional) */
   transition: top 1s cubic-bezier(0.4,0,0.2,1);
 }
