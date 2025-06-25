@@ -9,6 +9,26 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+container {
+  display: flex;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.left-column, .right-column {
+  width: 200px; /* or any width you want */
+  background: #f0f0f0;
+  /* Stretch to full height of container */
+}
+
+.main-content {
+  flex: 1;
+  background: #fff;
+}
 .layout-wrapper {
   display: flex;
   justify-content: center;
