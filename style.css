@@ -60,10 +60,12 @@ container {
 
 .left-column {
   left: 0;
+  background: #f0f0f0;
 }
 
 .right-column {
   right: 0;
+  background: #f0f0f0;
 }
 .side-column img {
   position: absolute;
@@ -102,7 +104,7 @@ container {
 
 .right-column {
   /* Optional: Style for right column */
-} */
+} 
 
 .menu {
   flex: 1 0 400px; /* Your existing menu styles, adjust as needed */
