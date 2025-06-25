@@ -116,20 +116,16 @@
              <article class="item">
                <p class="drinks">Soda & Water</p><p class="price">2.00</p>
                <p>Variety available</p>
-             </article>   
-   </div>
+             </article>  
+             </section>
+         </div>
+      </div>
    </div>
    
-             <div class="side-column right-column"></div>
-  <div class="menu-wrapper"></div>
-       </div>
-            </section>
-  </div>
-  </div>
-</div>
-  </div>
-  </div>
-      </main>
+             <div class="side-column right-column">
+          </div>
+      </div>
+ 
       <hr class="bottom-line">
       <footer>
         <p>
@@ -140,16 +136,17 @@
     </div>
   <script>
 const foodImages = [
-  'images/burger.webp',
-  'images/french-fries.webp',
-  'images/Popcorn.jpg',
+  'burger.webp',
+  'french-fries.webp',
+  'Popcorn.jpg',
   'images/lemonade.jpg'
   // Add more images as needed
 ];
 
 function addRandomImagesToColumn(columnSelector, imageCount = 5) {
   const column = document.querySelector(columnSelector);
-  const columnHeight = column.offsetHeight || 600; // fallback height
+  const columnHeight = column.offsetHeight || window.innerHeight; 
+  column.innerHTML = '';
 
   for (let i = 0; i < imageCount; i++) {
        const img = document.createElement('img');
