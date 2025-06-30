@@ -77,7 +77,7 @@ container {
   transition: top 1s cubic-bezier(0.4,0,0.2,1);
 }
 
-/* Add margin-left and margin-right to your main content to avoid overlap 
+/* Add margin-left and margin-right to your main content to avoid overlap */
  .menu-wrapper {
   margin-left: 80px;    /* Same as .side-column width */
   /*margin-right: 80px;
