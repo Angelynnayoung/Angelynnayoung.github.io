@@ -49,6 +49,8 @@ container {
   display: flex;
   width: 100%;
   min-height: 100vh; /* already present, ensures a minimum height */
+  align-items: stretch;
+  heigt: 100%;
 }
 
 .left-column {
