@@ -96,7 +96,7 @@ container {
   flex: 1 1 700px; /* prevents it from growing, but allows shrinking */
   max-width: 700px;
   min-width: 320px;
-  background: #fff;
+  background: light purple !important;
   box-shadow: 0 4px 18px rgba(0,0,0,0.09);
   border-radius: 12px;
   margin: 0 1em;
