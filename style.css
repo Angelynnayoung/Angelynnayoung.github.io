@@ -61,7 +61,7 @@ container {
   background: #f0f0f0;
 }
 .side-column {
-  width: 70px;
+  width: 100px;
   min-width: 70px;
   background: #f0f0f0;
   display: flex;
