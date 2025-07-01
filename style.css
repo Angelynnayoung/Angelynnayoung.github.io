@@ -70,6 +70,7 @@ container {
   position: relative;
   z-index: 1;
   flex-grow: 1; /* This makes the columns stretch to fill the height */
+  border: 2px solid red !important; 
 }
 .side-column img {
   position: absolute;
