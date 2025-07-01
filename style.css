@@ -48,7 +48,7 @@ container {
 .layout-wrapper {
   display: flex;
   width: 100%;
-  min-height: 80vh; /* already present, ensures a minimum height */
+  min-height: 100vh; /* already present, ensures a minimum height */
 }
 
 .left-column {
