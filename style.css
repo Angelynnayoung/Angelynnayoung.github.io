@@ -49,8 +49,8 @@ container {
 }
 .layout-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  width: 100%;
+  min-height: 80vh; /* already present, ensures a minimum height */
 }
 
 .left-column {
@@ -61,6 +61,17 @@ container {
 .right-column {
   right: 0;
   background: #f0f0f0;
+}
+.side-column {
+  width: 70px;
+  min-width: 70px;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  flex-grow: 1; /* This makes the columns stretch to fill the height */
 }
 .side-column img {
   position: absolute;
@@ -78,11 +89,17 @@ container {
 }
 
 /* Add margin-left and margin-right to your main content to avoid overlap */
- .menu-wrapper {
-  margin-left: 80px;    /* Same as .side-column width */
-  /*margin-right: 80px;
-  position: relative;
-  z-index: 2;           /* Above columns if needed */
+ 
+.menu-wrapper {
+  flex: 0 1 700px; /* prevents it from growing, but allows shrinking */
+  max-width: 700px;
+  min-width: 320px;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+  border-radius: 12px;
+  margin: 0 1em;
+  padding: 2em 1em;
+  z-index: 2;
 }
 /*.side-column {
   width: 80px; /* Adjust width as needed */
