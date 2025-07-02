@@ -74,6 +74,7 @@ container {
   border: 2px solid red !important; 
   background: yellow !important;
   flex-shrink: 0;
+  min-width: 70px;
 }
 .side-column img {
   position: absolute;
