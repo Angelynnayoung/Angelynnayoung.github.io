@@ -51,7 +51,7 @@ container {
   width: 100%;
   min-height: 100vh; /* already present, ensures a minimum height */
   align-items: stretch;
- 
+  height: 100%;
   border: 2px dashed blue;
 }
 
@@ -75,6 +75,7 @@ container {
   background: yellow !important;
   flex-shrink: 0;
   min-width: 70px;
+  height: 100%;
 }
 .side-column img {
   position: absolute;
