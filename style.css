@@ -20,7 +20,7 @@ container {
 .left-column, .right-column {
   width: 400px !important; /* or any width you want */
   min-width: 400px !important;
-  background: #f0f0f0;
+
   /* Stretch to full height of container */
 }
 
@@ -71,7 +71,7 @@ container {
   position: relative;
   z-index: 1;
   border: 2px solid red !important; 
-  background: lavender !important;
+  background: #E6E6FA !important;
   flex-shrink: 0;
   /* height: 100%; <-- REMOVE THIS */
 }
