@@ -55,12 +55,12 @@ container {
 }
 .left-column {
   left: 0;
-  background: #f0f0f0;
+  
 }
 
 .right-column {
   right: 0;
-  background: #f0f0f0;
+  
 }
 .side-column {
   
@@ -105,20 +105,11 @@ container {
 }
 
 
-.left-column {
-  /* Optional: Style for left column */
-}
-
-.right-column {
-  /* Optional: Style for right column */
-} 
 
 .menu {
   flex: 1 0 400px; /* Your existing menu styles, adjust as needed */
   max-width: 650px;
-}
-.menu {
-  max-width: 650px;
+
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 18px rgba(0,0,0,0.09);
