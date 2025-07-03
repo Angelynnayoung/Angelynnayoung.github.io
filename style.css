@@ -52,6 +52,7 @@ container {
   min-height: 100vh;
   align-items: stretch;
   border: 2px dashed blue;
+}
 .left-column {
   left: 0;
   background: #f0f0f0;
@@ -70,7 +71,7 @@ container {
   position: relative;
   z-index: 1;
   border: 2px solid red !important; 
-  background: light purple !important;
+  background: lavender !important;
   flex-shrink: 0;
   /* height: 100%; <-- REMOVE THIS */
 }
