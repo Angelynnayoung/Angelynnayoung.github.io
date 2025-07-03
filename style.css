@@ -75,7 +75,7 @@ container {
   background: yellow !important;
   flex-shrink: 0;
   min-width: 70px;
-  
+  align-self: stretch;
 }
 .side-column img {
   position: absolute;
