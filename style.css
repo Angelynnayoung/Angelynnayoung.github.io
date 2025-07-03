@@ -19,7 +19,7 @@ container {
 
 .left-column, .right-column {
   width: 400px !important; /* or any width you want */
-  min-width: 400px ! important;
+  min-width: 400px !important;
   background: #f0f0f0;
   /* Stretch to full height of container */
 }
