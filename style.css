@@ -16,6 +16,8 @@ body {
   align-items: stretch;      /* Ensures children stretch vertically */
   width: 100%;
   min-height: 100vh;         /* Full viewport height */
+  justify-content: center;
+  
 }
 
 /* Side Columns */
@@ -252,7 +254,7 @@ section {
     margin-bottom: 16px;
   }
   .layout-wrapper {
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
   }
   .side-column {
