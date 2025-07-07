@@ -1,38 +1,94 @@
-@media screen and (max-width: 768px) {
-  body {
-    padding: 0 1em;
-    height: auto; /* Remove fixed height for scrolling */
-    flex-direction: column;
-  }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  .logo {
-    width: 90vw;
-    max-width: 300px;
-    margin: 0 auto 1em auto;
-    vertical-align: middle;
-    justify-items: center;
-  }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fefefe;
+  color: #222;
+  min-height: 100vh;
+}
 
-  .menu {
-    padding: 1em;
-    margin: 1em 0;
-    max-width: 100%;
-  }
+.layout-wrapper {
+  display: flex;
+  align-items: stretch;      /* Ensures children stretch vertically */
+  width: 100%;
+  min-height: 100vh;         /* Full viewport height */
+}
 
-  section {
-    padding: 10px;
-    margin-bottom: 16px;
-  }
-  .layout-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .side-column {
-    width: 100%;
-    min-width: 0;
-    height: 70px;  /* Side columns become top/bottom bars, adjust height as needed */
-    flex-direction: row;
-  }
+/* Side Columns */
+.side-column {
+  width: 70px;              /* Or your preferred width */
+  min-width: 70px;
+  height: 100%;             /* Make columns as tall as the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  border: 2px solid red;    /* For debugging, remove if you like */
+  background: lavender !important;
+}
+
+/* Remove background from these unless you want something different! */
+.left-column, .right-column {
+  /* No background here! */
+}
+
+/* Images inside side columns */
+.side-column img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  background: transparent !important;  /* typo fixed */
+  transition: top 1s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Main Content */
+.menu-wrapper {
+  flex: 1 1 700px;
+  max-width: 700px;
+  min-width: 320px;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+  border-radius: 12px;
+  margin: 0 1em;
+  padding: 2em 1em;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Example menu styling, adjust as needed */
+.menu {
+  flex: 1 0 400px; /* Your existing menu styles, adjust as needed */
+  max-width: 650px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+  padding: 2rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin: 1.5em auto;
+  max-width: 600px;
+}
+
+
+
 
   .item {
     flex-direction: column;
@@ -44,21 +100,7 @@
     padding-left: 0;
     margin-top: .2em;
   }
-.menu-wrapper {
-  flex: 1 1 700px; /* prevents it from growing, but allows shrinking */
-  max-width: 700px;
-  min-width: 320px;
-  background: lavender !important;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.09);
-  border-radius: 12px;
-  margin: 0 1em;
-  padding: 2em 1em;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1em auto;
-}
+
 
 
 
@@ -73,11 +115,7 @@
   margin: 2rem auto;
   text-align: center;
 }
-.description {
-  text-align: center;
-  margin: 1.5em auto;
-  max-width: 600px;
-}
+
 .menu section {
   margin-bottom: 2em;
 }
