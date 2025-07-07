@@ -12,7 +12,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
-container {
+.container {
   display: flex;
   min-height: 100vh; /* Full viewport height */
 }
@@ -85,7 +85,7 @@ container {
   border-radius: 8px;
   margin: 10px 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  background: tranparent !important;
+  background: transparent !important;
   /* transition for a floating effect (optional) */
   transition: top 1s cubic-bezier(0.4,0,0.2,1);
 }
@@ -96,7 +96,7 @@ container {
   flex: 1 1 700px; /* prevents it from growing, but allows shrinking */
   max-width: 700px;
   min-width: 320px;
-  background: light purple !important;
+  background: lavender !important;
   box-shadow: 0 4px 18px rgba(0,0,0,0.09);
   border-radius: 12px;
   margin: 0 1em;
