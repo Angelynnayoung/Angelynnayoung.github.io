@@ -28,13 +28,14 @@ body {
   height: 100%;             /* Make columns as tall as the container */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 1;
   flex-shrink: 0;
   border: 2px solid red;    /* For debugging, remove if you like */
   background: lavender !important;
-  
+  height: 100%;
 }
 
 /* Remove background from these unless you want something different! */
@@ -44,7 +45,7 @@ body {
 
 /* Images inside side columns */
 .side-column img {
-  position: absolute;
+  position: static;
   left: 50%;
   transform: translateX(-50%);
   width: 40px;
