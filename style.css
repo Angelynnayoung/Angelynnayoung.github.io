@@ -52,6 +52,7 @@ html, body {
   min-height: 100vh;
   align-items: stretch;
   border: 2px dashed blue;
+  height: 100%;
 }
 .left-column {
   left: 0;
@@ -73,7 +74,7 @@ html, body {
   border: 2px solid red !important; 
   background: lavender !important;
   flex-shrink: 0;
-  /* height: 100%; <-- REMOVE THIS */
+  height: 100%;
 }
 .side-column img {
   position: absolute;
