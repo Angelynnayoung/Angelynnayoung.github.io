@@ -17,6 +17,7 @@ body {
   width: 100%;
   min-height: 100vh;         /* Full viewport height */
   justify-content: center;
+  border: dashed-lines red;
   
 }
 
@@ -33,6 +34,7 @@ body {
   flex-shrink: 0;
   border: 2px solid red;    /* For debugging, remove if you like */
   background: lavender !important;
+  border: green;
 }
 
 /* Remove background from these unless you want something different! */
@@ -69,6 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: dark purple;
 }
 
 /* Example menu styling, adjust as needed */
