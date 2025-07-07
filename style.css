@@ -1,96 +1,49 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 1em;
+    height: auto; /* Remove fixed height for scrolling */
+    flex-direction: column;
+  }
 
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #fefefe;
-  color: #222;
-  min-height: 100vh;
-}
-.container {
-  display: flex;
-  min-height: 100vh; /* Full viewport height */
-}
+  .logo {
+    width: 90vw;
+    max-width: 300px;
+    margin: 0 auto 1em auto;
+    vertical-align: middle;
+    justify-items: center;
+  }
 
-.left-column, .right-column {
-  width: 400px !important; /* or any width you want */
-  min-width: 400px !important;
+  .menu {
+    padding: 1em;
+    margin: 1em 0;
+    max-width: 100%;
+  }
 
-  /* Stretch to full height of container */
-}
+  section {
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+  .layout-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .side-column {
+    width: 100%;
+    min-width: 0;
+    height: 70px;  /* Side columns become top/bottom bars, adjust height as needed */
+    flex-direction: row;
+  }
 
-.main-content {
-  flex: 1;
-  background: #fff;
-}
-.menu-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 700px;
-  min-width: 320px;
-  margin-top: 0;
-  border: 2px solid green;
-}
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 1.5em;
-}
-.layout-wrapper {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-  align-items: stretch;
-  border: 2px dashed blue;
-  
-}
-.left-column {
-  left: 0;
-  
-}
-
-.right-column {
-  right: 0;
-  
-}
-.side-column {
-  width: 120px;
-  min-width: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-  border: 2px solid red !important; 
-  background: lavender !important;
-  flex-shrink: 0;
-  height: 100%;
-}
-.side-column img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;      /* or any value that looks good */
-  height: auto;     /* keeps the aspect ratio */
-  max-width: 100%;  /* prevents overflow */
-  border-radius: 8px;
-  margin: 10px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  background: transparent !important;
-  /* transition for a floating effect (optional) */
-  transition: top 1s cubic-bezier(0.4,0,0.2,1);
-}
-
-/* Add margin-left and margin-right to your main content to avoid overlap */
- 
+  .price {
+    align-self: flex-start;
+    padding-left: 0;
+    margin-top: .2em;
+  }
 .menu-wrapper {
   flex: 1 1 700px; /* prevents it from growing, but allows shrinking */
   max-width: 700px;
@@ -104,6 +57,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1em auto;
 }
 
 
