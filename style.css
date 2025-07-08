@@ -22,21 +22,17 @@ body {
 }
 
 /* Side Columns */
-.side-column {
-  width: 70px;              /* Or your preferred width */
-  min-width: 70px;
-  height: 100%;             /* Make columns as tall as the container */
+..side-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* Even spacing from top to bottom */
   align-items: center;
+  height: 100vh; /* Full viewport height */
+  min-width: 70px;
+  width: 70px;
+  background: lavender;
   position: relative;
-  z-index: 1;
-  flex-shrink: 0;
-  border: 2px solid red;    /* For debugging, remove if you like */
-  background: lavender !important;
-  height: 100%;
-  /* overflow: hidden; */
+  border: 2px solid red;
 }
 
 /* Remove background from these unless you want something different! */
@@ -46,17 +42,13 @@ body {
 
 /* Images inside side columns */
 .side-column img {
-  /*position: absolute;
-  left: 50%;
-  transform: translateX(-50%);*/
   width: 40px;
   height: auto;
-  max-width: 100%;
+  margin: 0;
   border-radius: 8px;
-  margin: 10px 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  background: transparent !important;  /* typo fixed */
- /* transition: top 1s cubic-bezier(0.4,0,0.2,1);*/
+  background: transparent;
+  /* Remove position: absolute, left, top, transform, etc */
 }
 
 /* Main Content */
