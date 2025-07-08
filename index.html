@@ -182,22 +182,38 @@
   ];
 
   function addRandomImagesToColumn(selector, count) {
-    const col = document.querySelector(selector);
-    col.innerHTML = ""; // Clear any existing content
-    for (let i = 0; i < count; i++) {
-      const img = document.createElement("img");
-      // Pick a random image from the array
-      img.src = images[Math.floor(Math.random() * images.length)];
-      img.style.position = "absolute";
-      img.style.left = "50%";
-      img.style.transform = "translateX(-50%)";
-      // Randomize the vertical position
-      img.style.top = `${Math.random() * 80 + 5}%`;
-      img.style.width = "40px";
-      img.style.borderRadius = "8px";
-      img.style.boxShadow = "0 2px 6px rgba(0,0,0,0.08)";
-      col.appendChild(img);
-    }
+  const col = document.querySelector(selector);
+  col.innerHTML = "";
+  const colHeight = col.clientHeight || window.innerHeight;
+
+  const positions = [0]; // top
+  // Generate random positions between top and bottom
+  for (let i = 1; i < count - 1; i++) {
+    positions.push(Math.random());
+  }
+  positions.push(1); // bottom
+
+  // Sort positions so they're in order from top to bottom
+  positions.sort((a, b) => a - b);
+
+  for (let i = 0; i < count; i++) {
+    const img = document.createElement("img");
+    img.src = images[Math.floor(Math.random() * images.length)];
+    img.style.left = "50%";
+    img.style.transform = "translateX(-50%)";
+    img.style.width = "40px";
+    img.style.borderRadius = "8px";
+    img.style.boxShadow = "0 2px 6px rgba(0,0,0,0.08)";
+    img.style.position = "absolute";
+
+    // Calculate top position: leave a little margin at top and bottom
+    const margin = 10;
+    const usableHeight = colHeight - 2 * margin - 40; // 40 = img height
+    img.style.top = `${margin + positions[i] * usableHeight}px`;
+
+    col.appendChild(img);
+  }
+}
   }
 
   document.addEventListener("DOMContentLoaded", function() {
