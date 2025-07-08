@@ -22,7 +22,7 @@ body {
 }
 
 /* Side Columns */
-..side-column {
+.side-column {
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Even spacing from top to bottom */
