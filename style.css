@@ -36,6 +36,7 @@ body {
   border: 2px solid red;    /* For debugging, remove if you like */
   background: lavender !important;
   height: 100%;
+  overflow: hidden;
 }
 
 /* Remove background from these unless you want something different! */
@@ -45,7 +46,7 @@ body {
 
 /* Images inside side columns */
 .side-column img {
-  position: static;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 40px;
