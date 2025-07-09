@@ -28,6 +28,7 @@ body {
   justify-content: space-between; /* Even spacing from top to bottom */
   align-items: center;
   height: 100vh; /* Full viewport height */
+  height: 100vh;
   min-width: 70px;
   width: 70px;
   background: lavender;
@@ -53,7 +54,7 @@ body {
 
 /* Main Content */
 .menu-wrapper {
-  flex: 1 1 700px;
+  flex: 1;
   max-width: 700px;
   min-width: 320px;
   background: #fff;
